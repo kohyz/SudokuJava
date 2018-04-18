@@ -1,8 +1,3 @@
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -22,9 +17,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
-import javax.sound.sampled.Clip;
 
 public class SudokuGame {
 	public static final int GRID_SIZE = 9;  // Size of the board
@@ -46,7 +38,7 @@ public class SudokuGame {
 	Color light = new Color(241, 212, 178);
 	Color lighter = new Color(236, 230, 207);
   	
-	JFrame frame= new JFrame();
+	static JFrame frame= new JFrame();
 	
 	JPanel puzzlePanel, buttonPanel, instructionsPanel, checkCorrectPanel, newGamePanel;
 	JButton btnInstructions, btnCheckCorrect, btnNewGame;
